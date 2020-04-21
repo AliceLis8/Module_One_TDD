@@ -4,12 +4,12 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{5B031CA3-0212-4826-953A-11774A48C0BD}</ProjectGuid>
+    <ProjectGuid>{1DF0F2AB-A862-4987-B877-5E2B02B9CF1A}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>CalculatorSample.Logic</RootNamespace>
-    <AssemblyName>CalculatorSample.Logic</AssemblyName>
-    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <RootNamespace>Emotion</RootNamespace>
+    <AssemblyName>Emotion</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>
   </PropertyGroup>
@@ -41,8 +41,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Calculator.cs" />
+    <Compile Include="Calm.cs" />
+    <Compile Include="EmotionFactory.cs" />
+    <Compile Include="EmotionTypes.cs" />
+    <Compile Include="IEmotion.cs" />
+    <Compile Include="IEmotionFactory.cs" />
+    <Compile Include="Person.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Self_Confidence.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
